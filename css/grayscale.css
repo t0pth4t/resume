@@ -117,7 +117,43 @@ a:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
-.intro {
+.webp .intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: url(../img/intro-bg.webp) no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.webp .intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.webp .intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+.webp .intro .intro-body .intro-text {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .webp .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .webp .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  .webp .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+}
+.no-webp .intro {
   display: table;
   width: 100%;
   height: auto;
@@ -131,25 +167,25 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
-.intro .intro-body {
+.no-webp .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
 }
-.intro .intro-body .brand-heading {
+.no-webp .intro .intro-body .brand-heading {
   font-size: 40px;
 }
-.intro .intro-body .intro-text {
+.no-webp .intro .intro-body .intro-text {
   font-size: 18px;
 }
 @media (min-width: 768px) {
-  .intro {
+  .no-webp .intro {
     height: 100%;
     padding: 0;
   }
-  .intro .intro-body .brand-heading {
+  .no-webp .intro .intro-body .brand-heading {
     font-size: 100px;
   }
-  .intro .intro-body .intro-text {
+  .no-webp .intro .intro-body .intro-text {
     font-size: 26px;
   }
 }
@@ -220,7 +256,18 @@ a:focus {
 .content-section {
   padding-top: 100px;
 }
-.download-section {
+.webp .download-section {
+  width: 100%;
+  padding: 50px 0;
+  color: white;
+  background: url(../img/downloads-bg.webp) no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.nowebp .download-section {
   width: 100%;
   padding: 50px 0;
   color: white;
